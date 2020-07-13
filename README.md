@@ -9,6 +9,6 @@ Bienvenue dans KataRPG
 
 # Comment ça fonctionne ?
 
-1 - Cloner le repo
-2 - Se placer dans /KataRPGTests/KataRPGTests.swift
-3 - CMD + U
+- Cloner le repo
+- Se placer dans /KataRPGTests/KataRPGTests.swift
+- Taper CMD + U
