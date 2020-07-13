@@ -14,11 +14,11 @@ class Warrior : Character {
         if (self.hasFaction()) {
             if (!self.checkSameFaction(character: character)) {
                 character.health -= damage
-                print("Tiens jtencule warrior, t pas de la meme section que moi : \(character.name)")
+                print("I attack you, You don't belong to my faction : \(character.name)")
             }
         } else {
             character.health -= damage
-            print("Tiens jtencule warrior : \(character.name)")
+            print("I attack you : \(character.name)")
         }
         
     }
@@ -30,7 +30,7 @@ class Warrior : Character {
     func healHimSelf() -> Void {
         if (self.health < 100) {
             self.health += 1
-            print("jme heal warrior")
+            print("I heal myself")
         }
     }
 }

@@ -28,20 +28,20 @@ class Character {
         if (self.hasFaction()) {
             if (self.name != character.name && character.alive == true && !checkSameFaction(character: character)) {
                 character.health -= 1
-                print("J'ai attacker un fdp d'ennemi, il est pas de ma faction : \(character.name)")
+                print("I attacked an enemy who don't belong to my faction : \(character.name)")
             }
             if (character.health <= 0) {
                 character.alive = false
-                print("il est mort zebi, l'ennemi faction : \(character.name)")
+                print("He is dead, He's didn't belong to my faction : \(character.name)")
             }
         } else {
             if (self.name != character.name && character.alive == true) {
                 character.health -= 1
-                print("J'ai attacker un fdp d'ennemi : \(character.name)")
+                print("I attacked an enemy : \(character.name)")
             }
             if (character.health <= 0) {
                 character.alive = false
-                print("il est mort zebi : \(character.name)")
+                print("He is dead : \(character.name)")
             }
         }
         
@@ -51,12 +51,12 @@ class Character {
         if (hasFaction()) {
             if (character.health < 100 && checkSameFaction(character: character)) {
                 character.health += 1
-                print("Tiens poto je te heal faction: \(character.name)")
+                print("I heal you my friend: \(character.name)")
             }
         } else {
             if (character.health < 100) {
                 character.health += 1
-                print("Tiens poto je te heal : \(character.name)")
+                print("I heal you : \(character.name)")
             }
         }
     }

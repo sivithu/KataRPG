@@ -14,7 +14,7 @@ class Priest : Character {
         if (self.hasFaction()) {
             if (character.health < 100 && checkSameFaction(character: character)) {
                 character.health += bonusHealth
-                print("Priest heal allie")
+                print("Priest heal ally")
             }
         } else {
             character.health += bonusHealth
